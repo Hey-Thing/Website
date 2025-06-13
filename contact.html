@@ -1,75 +1,78 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Contacts</title>
-    <link rel="stylesheet" href="output.css">
-</head>
+    <link rel="stylesheet" href="output.css" />
+  </head>
 
-<body class="bg-gradient-to-br from-yellow-500/60 from-5% via-green-500/60 via-30% to-gray-800 to-100% min-h-screen">
+  <body class="bg-gradient-to-br from-yellow-500/60 from-5% via-green-500/60 via-30% to-gray-800 to-100% min-h-screen">
     <!-- Navbar -->
-    <div class="relative min-h-screen">
-        <div class="absolute top-0 left-0 w-full h-16 z-50">
-            <nav class="absolute pl-70 w-full justify-end ">
-                <ul class="gap-22 max-gap pb-8 bg-gray-800 text-white w-full flex justify-evenly p-5 items-center">
-                    <li
-                        class="bg-green-700 hover:bg-green-800 hover:text-xl transition-all duration-300 ease-in-out px-6 p-3 rounded-2xl text-center w-32 hover:w-40">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li
-                        class="bg-green-700 hover:bg-green-800 hover:text-xl transition-all duration-300 ease-in-out px-6 p-3 rounded-2xl text-center w-32 hover:w-40">
-                        <a href="about.html">About</a>
-                    </li>
-                    <li
-                        class="bg-green-700 hover:bg-green-800 hover:text-xl transition-all duration-300 ease-in-out px-6 p-3 rounded-2xl text-center w-32 hover:w-40">
-                        <a href="projects.html">Projects</a>
-                    </li>
-                    <li
-                        class="bg-green-700 hover:bg-green-800 hover:text-xl transition-all duration-300 ease-in-out px-6 p-3 rounded-2xl text-center w-32 hover:w-40">
-                        <a href="Contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="absolute w-[600px] flex items-center justify-center">
-                <div
-                    class="bg-gray-800 absolute -top-60 -left-40 w-[480px] h-[480px] rounded-full flex items-center justify-center">
-                    <h1 class="text-6xl p-3 absolute top-57 left-40 text-white font-bold ">Portfolio Hedin Seinen</h1>
-                </div>
-            </div>
+    <div class="relative">
+      <div class="absolute top-0 left-0 w-full h-16 z-50">
+        <nav class="absolute pl-70 w-full justify-end">
+          <ul class="gap-22 max-gap pb-8 bg-gray-800 text-white w-full flex justify-evenly p-5 items-center">
+            <li
+              class="bg-green-700 hover:bg-green-800 hover:text-xl transition-all duration-300 ease-in-out px-6 p-3 rounded-2xl text-center w-32 hover:w-40">
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              class="bg-green-700 hover:bg-green-800 hover:text-xl transition-all duration-300 ease-in-out px-6 p-3 rounded-2xl text-center w-32 hover:w-40">
+              <a href="about.html">About</a>
+            </li>
+            <li
+              class="bg-green-700 hover:bg-green-800 hover:text-xl transition-all duration-300 ease-in-out px-6 p-3 rounded-2xl text-center w-32 hover:w-40">
+              <a href="projects.html">Projects</a>
+            </li>
+            <li
+              class="bg-green-700 hover:bg-green-800 hover:text-xl transition-all duration-300 ease-in-out px-6 p-3 rounded-2xl text-center w-32 hover:w-40">
+              <a href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="absolute w-[600px] flex items-center justify-center">
+          <div
+            class="bg-gray-800 absolute -top-60 -left-40 w-[480px] h-[480px] rounded-full flex items-center justify-center">
+            <h1 class="text-6xl p-3 absolute top-57 left-40 text-white font-bold">Portfolio Hedin Seinen</h1>
+          </div>
         </div>
-
-        <!-- Content -->
-        <div class="flex justify-center items-center w-screen h-screen">
-            <div class="flex p-8 gap-8">
-                <a href="https://www.linkedin.com/in/hedin-seinen-5401a2332/" target="_blank" class="block cursor-pointer">
-                    <div class="flex flex-col items-center gap-8 pt-8 p-8 bg-gray-800 w-80 hover:w-90 transition-all ease-in-out duration-700 rounded-2xl">
-                        <div class="flex">
-                            <img class="bg-white rounded-full object-contain" src="LinkedIn.png" alt="">
-                        </div>
-                        <span class="w-full text-white text-center">Linkedin</span>
-                    </div>
-                </a>
-
-                <a href="https://github.com/Hey-Thing" target="_blank" class="block cursor-pointer">
-                    <div class="flex flex-col items-center gap-8 pt-8 p-8 bg-gray-800 w-80 hover:w-90 transition-all ease-in-out duration-700 rounded-2xl">
-                        <div class="flex">
-                            <img class="bg-white rounded-full object-contain" src="github.png" alt="">
-                        </div>
-                        <span class="w-full text-white text-center">GitHub</span>
-                    </div>
-                </a>
-
-                <a href="mailto:hedinseinenprive@gmail.com" class="block cursor-pointer">
-                    <div class="flex flex-col items-center gap-8 pt-8 p-8 bg-gray-800 w-80 hover:w-90 transition-all ease-in-out duration-700 rounded-2xl">
-                        <div class="flex">
-                            <img class="bg-white rounded-full object-contain" src="email_icon.png" alt="">
-                        </div>
-                        <span class="w-full text-white text-center">Email</span>
-                    </div>
-                </a>
-            </div>
-        </div>
+      </div>
     </div>
-</body>
 
+    <main class="w-screen">
+      <!-- Content -->
+      <div class="flex justify-center items-center w-full h-screen ">
+        <div class="grid grid-cols-3 gap-10 md:w-3/4">
+          <a href="https://www.linkedin.com/in/hedin-seinen-5401a2332/" target="_blank" class="block cursor-pointer">
+            <div
+              class="flex flex-col items-center gap-8 p-8 bg-gray-800 w-full hover:w-[103%] transition-all ease-in-out duration-700 rounded-2xl">
+              <div class="flex">
+                <img class="bg-white rounded-full object-contain" src="img/LinkedIn.png" alt="" />
+              </div>
+              <span class="w-full text-white text-center">Linkedin</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/Hey-Thing" target="_blank" class="block cursor-pointer">
+            <div
+              class="flex flex-col items-center gap-8 p-8 bg-gray-800 w-full hover:w-[103%] transition-all ease-in-out duration-700 rounded-2xl">
+              <div class="flex">
+                <img class="bg-white rounded-full object-contain" src="img/github.png" alt="" />
+              </div>
+              <span class="w-full text-white text-center">GitHub</span>
+            </div>
+          </a>
+
+          <a href="mailto:hedinseinenprive@gmail.com" class="block cursor-pointer">
+            <div
+              class="flex flex-col items-center gap-8 p-8 bg-gray-800 w-full hover:w-[103%] transition-all ease-in-out duration-700 rounded-2xl">
+              <div class="flex">
+                <img class="bg-white rounded-full object-contain" src="img/email_icon.png" alt="" />
+              </div>
+              <span class="w-full text-white text-center">Email</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
