@@ -37,7 +37,7 @@
     <!-- Content -->
     <div
       class="bg-gradient-to-br from-yellow-500/60 from-5% via-green-500/60 via-30% to-gray-800 to-100% min-h-screen flex justify-center items-center pt-[120px]">
-      <div class="grid grid-cols-1 lg:grid-cols-4 place-items-center gap-10 w-5/6 border border-2 border-red-400">
+      <div class="grid grid-cols-1 lg:grid-cols-4 place-items-center gap-10 w-5/6 ">
         <a href="" class="block cursor-pointer">
           <div
             class="bg-gray-800 p-8 rounded-lg shadow-lg max-w-md w-full hover:scale-130 transition-all ease-in-out duration-700">
@@ -72,6 +72,7 @@
               <li>Time: 1 week</li>
               <li>Teamsize: 4 people</li>
             </ul>
+            <button class="showModal mt-8  bg-green-700 hover:bg-green-800  px-8 py-2 rounded-2xl text-center" data-modal-id="project1">Read More</button>
           </div>
         </a>
 
@@ -145,18 +146,20 @@
     <!-- Modals-->
     <div>
 
-      <button class="showModal" data-modal-id="project1">Open Modal</button>
-      <button class="showModal" data-modal-id="project2">Open Modal</button>
-
       <!-- The Modal -->
-      <div id="project1" class="modal">
+      <div id="project1" class="modal z-1 hidden fixed left-0 top-0 w-full h-full overflow-auto bg-black/80">
         <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
+        <div class="modal-content relative bg-gray-800 text-white mx-auto mt-[15%] p-5 rounded-lg border border-2 border-gray-900 w-1/4">
+          <span class="close text-gray-200 absolute top-2 right-4 text-3xl font-bold hover:text-green-800 focus:text-green-800 cursor-pointer">&times;</span>
+          <h1 class="text-4xl mb-6">Kopje</h1>
           <p>Some text in the Modal..</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia labore natus sunt recusandae quas delectus aut rerum repudiandae enim? Animi iste blanditiis soluta tempora, suscipit nisi corrupti quasi odio nemo!</p>
         </div>
       </div>
+
+
     </div>
+
     <script src="js/app.js"></script>
   </body>
 </html>
