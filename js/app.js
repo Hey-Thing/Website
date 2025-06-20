@@ -29,8 +29,15 @@ Array.from(closeBtns).forEach((span) => {
 
 window.addEventListener("click", (ev) => {
   ev.preventDefault();
+
   const el = ev.target;
-  if (el.classList.contains("modal")) {
+
+  if (el.classList.contains("showModal")) {
     el.style.display = "none";
+  } else {
+    if (el.href) {
+      console.log(el.href);
+      window.location.href = el.href;
+    }
   }
 });
